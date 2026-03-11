@@ -1,6 +1,6 @@
-const Registration = require("../models/registration")
+const {Registration} = require("../models/registration")
 
-// 1️⃣ CREATE REGISTRATION
+
 exports.createRegistration = async (req, res) => {
     try {
 
@@ -24,7 +24,7 @@ exports.createRegistration = async (req, res) => {
 }
 
 
-// 2️⃣ GET ALL REGISTRATIONS
+
 exports.getRegistrations = async (req, res) => {
     try {
 
@@ -41,7 +41,7 @@ exports.getRegistrations = async (req, res) => {
 }
 
 
-// 3️⃣ UPDATE REGISTRATION
+
 exports.updateRegistration = async (req, res) => {
     try {
 
@@ -64,7 +64,7 @@ exports.updateRegistration = async (req, res) => {
 }
 
 
-// 4️⃣ DELETE REGISTRATION
+
 exports.deleteRegistration = async (req, res) => {
     try {
 

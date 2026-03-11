@@ -1,10 +1,9 @@
 const {User} = require("../models/user_model")
 const bcrypt = require("bcryptjs")
 
-// 1️⃣ CREATE USER (Register)
+
 exports.createUser = async (req, res) => {
     try {
-        console.log("Creating user with data:", req.body) // Debugging log
 
         const { name, email, password } = req.body
 
@@ -33,7 +32,7 @@ exports.createUser = async (req, res) => {
 }
 
 
-// 2️⃣ GET ALL USERS
+
 exports.getUsers = async (req, res) => {
     try {
 
@@ -47,7 +46,7 @@ exports.getUsers = async (req, res) => {
 }
 
 
-// 3️⃣ UPDATE USER
+
 exports.updateUser = async (req, res) => {
     try {
 
@@ -70,7 +69,7 @@ exports.updateUser = async (req, res) => {
 }
 
 
-// 4️⃣ DELETE USER
+
 exports.deleteUser = async (req, res) => {
     try {
 

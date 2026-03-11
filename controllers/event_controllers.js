@@ -1,6 +1,6 @@
-const Event = require("../models/event_model")
+const {Event} = require("../models/event_model")
 
-// 1️⃣ CREATE EVENT
+
 exports.createEvent = async (req,res)=>{
     try{
 
@@ -25,7 +25,7 @@ exports.createEvent = async (req,res)=>{
 }
 
 
-// 2️⃣ GET ALL EVENTS
+
 exports.getEvents = async (req,res)=>{
     try{
 
@@ -39,7 +39,7 @@ exports.getEvents = async (req,res)=>{
 }
 
 
-// 3️⃣ UPDATE EVENT
+
 exports.updateEvent = async (req,res)=>{
     try{
 
@@ -62,7 +62,6 @@ exports.updateEvent = async (req,res)=>{
 }
 
 
-// 4️⃣ DELETE EVENT
 exports.deleteEvent = async (req,res)=>{
     try{
 
