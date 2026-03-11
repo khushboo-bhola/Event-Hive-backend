@@ -9,6 +9,7 @@ const userSchema = new mongoose.Schema({
         default: "user"
     }
 })
+const User = new mongoose.model("User", userSchema)
 module.exports={
-    userSchema
+    User
 };

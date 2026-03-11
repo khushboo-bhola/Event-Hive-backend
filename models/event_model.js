@@ -10,7 +10,8 @@ const eventSchema = new mongoose.Schema({
         ref: "User"
     }
 })
+const Event = new mongoose.model("Event", eventSchema)
 
 module.exports={
-    eventSchema
+    Event
 };

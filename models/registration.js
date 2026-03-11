@@ -16,7 +16,8 @@ const registrationSchema = new mongoose.Schema({
         default: Date.now
     }
 })
-
+const Registration = new mongoose.model("Registration", registrationSchema)
 module.exports = {
-    registrationSchema
+    Registration,
+    
 }
